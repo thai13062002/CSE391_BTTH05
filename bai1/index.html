@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: rgb(147, 141, 141);
+            width: 25%;
+            height: 50px;
+            size: 50px;
+        }
+        .btn-delete{
+            background-color:brown;
+            color: white;
+            margin-left: 300px;
+            border: 0.5px solid #800040;
+            width: 100px;
+        }
+        .modal{
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.4);
+          display: none;
+          align-items: center;
+          justify-content: center;
+          
+        }
+        .modal-item{
+          position: fixed;
+          background-color: #fff;
+          width: 25rem;
+          text-align: center;
+          border-radius: 6px;
+
+        
+        }
+        .btn-cancel{
+          margin-right: 38px;
+        color: #800040 ;
+        background-color: #fff ;
+        }
+        .btn-confirm{
+          background-color: #800040;
+          color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Todos</h1>
+    <h2 class="todoitem">learn React</h2>
+    <button class="btn-delete" type="button">Delete</button>
+    <!-- modal -->
+    <div class="modal" >
+      <div class="modal-item">
+        <h2>Are you sure ?</h2>
+        <div class="modal-btn">
+              <button  class="btn-cancel" type="button">Cancel</button>
+              <button class="btn-confirm"  type="button">Confirm</button>
+        </div>
+      </div>
+  </div>
+    <script src="./delete.js"></script>
+</body>
+</html>
